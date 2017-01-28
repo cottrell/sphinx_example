@@ -1,4 +1,13 @@
-.. INTRO THING
+.. ipython:: python
+   :suppress:
+
+   import numpy as np
+   np.random.seed(123456)
+   from numpy.random import randn
+   import pandas as pd
+   import pandas.util.testing as tm
+   np.set_printoptions(precision=4, suppress=True)
+   pd.options.display.max_rows = 15
 
 H1: document title
 ##################
@@ -61,3 +70,11 @@ Here is something I want to talk about::
 
    "Smith", "John", 40
    "Smith", "John, Junior", 20
+
+
+This is me trying the ipython directive or whatever that is called.
+
+.. ipython:: python
+
+   df = pd.DataFrame(randn(10, 4))
+   df.describe()
